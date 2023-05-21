@@ -80,3 +80,11 @@ print(Number.three.rawValue) // Output: 3
 
 //Initializing from raw value
 let two = Number(rawValue: 2)
+
+
+//challenge
+let names = ["raj","sachin","rohit","surya","raj"]
+print(name.count)
+
+let namesSet = Set(names)
+print(namesSet)
