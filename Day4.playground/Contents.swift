@@ -12,6 +12,13 @@ let name:String //not initialized -> Need annotation
 name = "Raj"
 print(name)
 
+var anyValue:Any
+anyValue = 10
+print(anyValue)
+anyValue = 20.3
+print(anyValue)
+//let myDouble:Double = anyValue //Error
+
 //Enums
 enum Department{
     case development
@@ -24,7 +31,10 @@ print(myDepartment)
 extension Department:CaseIterable{
     
 }
-Department.allCases // Gives all enumeration cases
+for cas in Department.allCases{
+    print(cas)
+}
+print(Department.allCases) // Gives all enumeration cases
 
 //Enums with associated values
 enum Item {
